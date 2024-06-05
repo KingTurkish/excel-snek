@@ -38,7 +38,7 @@ Sub ResetGame()
     CreateBoard
     CreateSnake
     ShowSnake
-    bindKeys
+    freeKey
     game = False
 End Sub
 Sub TogglePause()
