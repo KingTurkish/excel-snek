@@ -2,7 +2,7 @@ Attribute VB_Name = "Main"
 Public rinc As Integer, cinc As Integer
 Dim r() As Integer, c() As Integer, t As Double
 Public game As Boolean
-Dim apples As Integer, gameOver As Boolean
+Dim apples As Integer, gameOver As Boolean, rng As Range
 
 Dim boardColor As Long, snakeBodyColor As Long, snakeheadColor As Long, appleColor As Long
 Sub SetColor()
@@ -14,7 +14,7 @@ Sub SetColor()
     appleColor = RGB(124, 63, 88)
 End Sub
 Sub SetScore()
-    Range("B27").Value = "Score: " & apples
+    Range("B29").Value = "Score: " & apples
 End Sub
 Sub StartGame()
     game = True
@@ -56,12 +56,13 @@ Sub ChangeButtonText()
 End Sub
 Sub CreateBoard()
     'Board Setup
-    Range("B2:Z26").Clear
-    Range("B2:Z26").Interior.color = boardColor
-    Range("B2:Z26").Borders(xlEdgeBottom).color = appleColor
-    Range("B2:Z26").Borders(xlEdgeLeft).color = appleColor
-    Range("B2:Z26").Borders(xlEdgeTop).color = appleColor
-    Range("B2:Z26").Borders(xlEdgeRight).color = appleColor
+    Set rng = Range("B2:Z27")
+    rng.Clear
+    rng.Interior.color = boardColor
+    rng.Borders(xlEdgeBottom).color = appleColor
+    rng.Borders(xlEdgeLeft).color = appleColor
+    rng.Borders(xlEdgeTop).color = appleColor
+    rng.Borders(xlEdgeRight).color = appleColor
     
 End Sub
 
