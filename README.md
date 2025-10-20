@@ -1,7 +1,15 @@
-# Snake in Excel VBA
+# Snek in Excel VBA
 This version of the game is written in Microsoft® Excel® for Microsoft 365 MSO (Version 2403 Build 16.0.17425.20236) 64-bit
 
 ![Screenshot](/images/Excel-Snek.jpg)
+
+Excel Snek Game
+
+Original concept and code by Haronkar Singh (Excel-Snake)
+https://github.com/haronkar/excel-snake
+
+Adapted and improved by Tristan Caldwell (Excel-Snek)
+https://github.com/KingTurkish/Excel-Snek
 
 To customize the looks of the game you can edit the RGB colors in the code
 ```
