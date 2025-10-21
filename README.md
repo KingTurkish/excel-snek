@@ -12,13 +12,21 @@ Adapted and improved by Tristan Caldwell (Excel-Snek)
 https://github.com/KingTurkish/Excel-Snek
 
 Improvements for v1.0 of Excel-Snek
+
 Dynamic high score table
+
 Power ups (Speed, slow, wall pass, traps, shrink, super shrink, bonus)
+
 Colour legends for power ups
+
 Cheat codes
+
 Moving wall levels
+
 Hidden trap levels
+
 Snek Chaser (yes it needs some work)
+
 
 To customize the looks of the game you can edit the RGB colours in the code
 
